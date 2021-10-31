@@ -1,0 +1,50 @@
+app -> webapp -> servlet-api.jar 
+app -> spring-core -->
+
+			1) core 
+			2) context
+			3) bean 
+			4) el 
+ 
+
+why ? 
+
+
+	spring -> singleton design pattern - create single  object for entire app 
+
+
+
+Signup.jsp -> submit-> SignupController -> new UserBean() -> setters 
+					   new UserDao() -> insert ->db -->connection open 
+
+
+500 submit-> singup.jsp =>  SingupController - 1 object 
+				USerBean and UserDao -1 1  
+
+
+servlet-container
+
+ 
+spring-container ---> ioc-container 
+
+
+
+1) BeanFactory 
+2) ApplicationContext
+		2.1
+		2.2
+		2.3
+		2.4
+
+
+
+
+
+
+
+
+
+
+
+
+
