@@ -3,10 +3,30 @@
         "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
 
 <beans>
-	<bean class="com.bean.UserBean" id="userBean"  init-method="init"  destroy-method="destroy">
+	<bean class="com.bean.UserBean" id="userBean" init-method="init"
+		destroy-method="destroy">
 		<property name="firstName" value="ram"></property>
 		<property name="email" value="ram@gmail.com"></property>
 		<property name="password" value="ram123"></property>
-
 	</bean>
+
+	<bean class="com.bean.AddressBean" id="address">
+		<property name="city" value="Ahmedabad"></property>
+		<property name="pincode" value="380025"></property>
+		<property name="area" value="Satelite"></property>
+	</bean>
+
+	<bean class="com.bean.CourseBean" id="course">
+		<property name="courseName" value="spring"></property>
+	</bean>
+
+	<bean class="com.bean.StudentBean" id="student">
+
+		<property name="name" value="ram"></property>
+		<property name="rollNum" value="123"></property>
+		<property name="addressBean" ref="address"></property>
+		<constructor-arg ref="course">
+		</constructor-arg>
+	</bean>
+
 </beans>

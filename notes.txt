@@ -35,6 +35,61 @@ spring-container ---> ioc-container
 		2.2) ClasspathXmlApplicationContext
 		2.3) XmlWeblApplicationContext 
 	 
+----------------------------------------------------------
+
+ DI -> dependency Injection 
+ 
+ class Student{
+ 	String name;
+ 	int rollNum;
+ 	Address address;
+ 	CourseBean courseBean; 
+ 	Student(CoueseBean c){
+ 	
+ 	}
+ }
+ 
+ CourseBean c = new CourseBean(); 
+ Student s = new Student(c);
+ 
+ Student s = new Student();
+ CourseBean c = new CourseBean(); 
+ s.setCourse(c); 
+ 
+ 
+ class Address{
+ 	String city,country;
+ 	int pincode;
+ }
+ class CourseBean{
+ 
+ }
+
+UserServlet ---> UserDao --> DbConnection 
+
+1) setter injection [ optional ] 
+2) constructor injection --> [required]  student ->course --> 1st course --> ()  
+
+
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
