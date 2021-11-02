@@ -1,4 +1,5 @@
 package com.bean;
+
 //new 
 //spring-> 
 public class UserBean {
@@ -6,6 +7,14 @@ public class UserBean {
 	String firstName;
 	String email;
 	String password;
+
+	public void init() {
+		System.out.println("init - userBean");
+	}
+
+	public void destroy() {
+		System.out.println("destroy - userBean");
+	}
 
 	public String getFirstName() {
 		return firstName;

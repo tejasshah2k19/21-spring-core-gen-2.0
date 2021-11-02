@@ -19,7 +19,7 @@ Signup.jsp -> submit-> SignupController -> new UserBean() -> setters
 
 
 500 submit-> singup.jsp =>  SingupController - 1 object 
-				USerBean and UserDao -1 1  
+				USerBean  -1 and UserDao -1    
 
 
 servlet-container
@@ -31,10 +31,10 @@ spring-container ---> ioc-container
 
 1) BeanFactory 
 2) ApplicationContext
-		2.1
-		2.2
-		2.3
-		2.4
+		2.1) FileSystemXmlApplicationContext
+		2.2) ClasspathXmlApplicationContext
+		2.3) XmlWeblApplicationContext 
+	 
 
 
 
